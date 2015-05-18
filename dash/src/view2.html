@@ -1,0 +1,7 @@
+<div>
+    <select ng-model="selSeries" ng-change="updateChart()">
+        <option ng-repeat="info in chartInfo" value="{{info.value}}">{{info.displayName}}</option>
+    </select>
+    <highchart id="chart1" config="chartConfig"></highchart>
+
+</div>
